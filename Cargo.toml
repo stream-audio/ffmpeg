@@ -1,0 +1,8 @@
+[package]
+name = "stream-audio-ffmpeg"
+version = "0.1.0"
+authors = ["Anton Rapetov <willir29@yandex.ru>"]
+edition = "2018"
+
+[dependencies]
+libc = "0.2"
