@@ -93,6 +93,7 @@ impl Encoder {
         }
     }
 }
+unsafe impl Send for Encoder {}
 
 impl Decoder {
     pub fn new(codec: Codec) -> Result<Self, Error> {
@@ -152,6 +153,7 @@ impl Decoder {
         Ok(Some(&self.read_buf))
     }
 }
+unsafe impl Send for Decoder {}
 
 const LAYOUT: u32 = super::resample::LAYOUT;
 
